@@ -1,0 +1,990 @@
+.mainbox{
+    border: 2px solid red;
+    width: 627px;
+    height: 627px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+.maincontainer{
+    margin: 200px;
+    
+}
+
+
+.box1{
+    background-color: rgb(223, 219, 219);
+    border: 1px solid;
+    border-top-left-radius: 8px;
+    width: 200px;
+    height: 200px;
+    outline: 10px solid rgb(34, 34, 222);
+    
+    position: relative;
+    left: 10px;
+    top: 10px;
+    
+}
+.box2{
+    
+        border: 1px solid;
+        border-bottom-left-radius: 8px;
+        width: 200px;
+        height: 200px;
+        outline: 10px solid yellow;
+        position: relative;
+        top: 213px;
+        left: 10px;
+        background-color: rgb(223, 219, 219);
+
+    }
+    .circal1    {
+        border: 13px solid rgb(34, 34, 222);
+        border-radius: 60%;
+        
+        position: relative;
+        left: 24px;
+        top: 40px;
+        outline: 2px solid ;
+    }
+    .circal2{
+        border: 13px solid rgb(34, 34, 222);
+        border-radius: 50%;
+        position: relative;
+        left: 80px;
+        top: 40px;
+        outline: 2px solid;
+        
+
+    }
+    .circal3{
+        border: 13px solid rgb(34, 34, 222);
+        border-radius: 50%;
+        position: relative;
+        right: 77px;
+        top: 132px;
+        outline: 2px solid;
+
+    }
+    .circal4{
+        border: 13px solid rgb(34, 34, 222);
+        border-radius: 50%;
+        position: relative;
+        right: 18px;
+        top: 130px;
+        outline: 2px solid;
+
+    }
+    .circal5{
+        border: 13px solid yellow;
+        border-radius: 50%;
+        position: relative;
+        left: 23px;
+        top: 39px;
+        outline: 2px solid;
+
+    }
+    .circal6{
+        border: 13px solid yellow;
+        border-radius: 50%;
+        position: relative;
+        left: 83px;
+        top: 38px;
+        outline: 2px solid;
+
+    }
+    .circal7{
+        border: 13px solid yellow;
+        border-radius: 50%;
+        position: relative;
+        right: 77px;
+        top: 136px;
+        outline: 2px solid;
+
+    }
+    .circal8{
+        border: 13px solid yellow;
+        border-radius: 50%;
+        position: relative;
+        right:16px;
+        top: 133px;
+        outline: 2px solid;
+        
+
+    }
+    .box3{
+        background-color: rgb(223, 219, 219);
+    border: 1px solid;
+    border-bottom-right-radius: 8px;
+    width: 200px;
+    height: 200px;
+    outline:10px solid green;
+    position: relative;
+    left: 415px;
+    top: 11px;
+}
+    .circal9{
+        border: 13px solid green;
+        border-radius: 50%;
+        position: relative;
+        left:23px;
+        top: 39px;
+        outline: 2px solid;
+
+    }
+    .circal10{
+        border: 13px solid green;
+        border-radius: 50%;
+        position: relative;
+        left: 86px;
+        top: 39px;
+        outline: 2px solid;
+
+    }
+    .circal11{
+        border: 13px solid green;
+        border-radius: 50%;
+        position: relative;
+        right: 70px;
+        top: 136px;
+        outline: 2px solid;
+
+    }
+    .circal12{
+        border: 13px solid green;
+        border-radius: 50%;
+        position: relative;
+        right: 14px;
+        top: 136px;
+        outline: 2px solid;
+
+    }
+    .box4{
+        background-color: rgb(223, 219, 219);
+    border: 1px solid ;
+    border-top-right-radius: 8px;
+    width: 200px;
+    height: 200px;
+    outline:10px solid red;
+    position: relative;
+    left: 415px;
+    bottom: 596px;
+
+    }
+    .circal13{
+        border: 13px solid red;
+        border-radius: 50%;
+        position: relative;
+        left: 25px;
+        top: 39px;
+        outline: 2px solid ;
+
+    }
+    .circal14{
+        border: 13px solid red;
+        border-radius: 50%;
+        position: relative;
+        left: 83px;
+        top: 39px;
+        outline: 2px solid ;
+    }
+    .circal15{
+        border: 13px solid red;
+        border-radius: 50%;
+        position: relative;
+        right: 70px;
+        top: 131px;
+        outline: 2px solid ;
+
+    }
+    .circal16{
+        border: 13px solid red;
+        border-radius: 50%;
+        position: relative;
+        right: 18px;
+        top: 131px;
+        outline: 2px solid ;
+
+    }
+    .div1{
+        border: 1px solid black;
+        background-color:  rgb(223, 219, 219);
+        width: 59px;
+        height: 38px;
+        position: relative;
+        top: 42px;
+        left: 251px;
+        
+
+    }
+    .display{
+        display: flex;
+        position: absolute;
+        top: 159px;
+        left: 181px;
+        
+    }
+    .center{
+        width: 176px;
+        height: 187px;
+        border: 1px solid black;
+        position: relative;
+        bottom: 607px;
+        left: 426px;
+        background-image: linear-gradient(red,blue,green,yellow);
+        
+    }
+    .img17{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 40px;
+        top: 38px;
+    }
+    
+    .div3{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 38px;
+        position: relative;
+       bottom : 769px;
+        left: 222px;
+    }
+    .div4{
+        border: 1px solid black;
+        background-color: red;
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 809px;
+        left: 283px;
+
+    }
+    .div5{
+        border: 1px solid black;
+        background-image: linear-gradient(red,black,blue);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div6{
+        border: 1px solid black;
+        background-color: rgb(250, 250, 239);
+        background-image:linear-gradient( red,blue,yellow);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div7{
+        border: 1px solid black;
+        background-color:red;
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+    }
+    .div8{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+    }
+    .display3{
+      display: flex;
+       position: relative;
+       right: 122px;
+    }
+    .div9{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div10{
+        border: 1px solid black;
+        background-color: red;
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div11{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .display4{
+        display: flex;
+        position: relative;
+        right: 122px;
+    }
+    .div12{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 38px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div13{
+        border: 1px solid black;
+        background-color: red;
+        width: 59px;
+        height: 37px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .div14{border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 36px;
+        position: relative;
+       bottom : 849px;
+        left: 344px;
+
+    }
+    .display5{
+        display: flex;
+        position: relative;
+        right: 122px;
+    }
+    .div15{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 300px;
+
+    }
+    .div16{
+        border: 1px solid black;
+        background-color: red;
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 300px;
+
+    }
+    .div17{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 300px;
+    }
+    .display6{
+        display: flex;
+        position: relative;
+        right: 139px;
+        top: 33px;
+    }
+    .div18{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div19{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div20{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .display7{
+        display: flex;
+        position: relative;
+        top: 438px;
+        right: 366px;
+    }
+    .div21{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div22{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div23{
+        border: 1px solid black;
+        background-image: radial-gradient(green,red);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .display8{
+        display: flex;
+        position: relative;
+        top: 366px;
+        right: 366px;
+
+    }
+    .div24{
+        border: 1px solid black;
+        background-image: radial-gradient(yellow,red,blue);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div25{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .div26{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+        position: relative;
+       bottom : 847px;
+        left: 344px;
+
+    }
+    .display9{
+        display: flex;
+        position: relative;
+        top: 294px;
+        right: 366px;
+
+    }
+    .div27{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+    }
+    .div28{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 59px;
+        height: 34px;
+    }
+    .div29{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+    }
+    .display10{
+        display: flex;
+        position: relative;
+        bottom: 625px;
+        right: 22px;
+    }
+    .div30{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+
+    }
+    .div31{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 59px;
+        height: 34px;
+
+    }
+    .div32{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+
+    }
+    .display20{
+        display: flex;
+        position: relative;
+        bottom: 697px;
+        right: 22px;
+    }
+    .div33{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+
+    }
+    .div34{
+        border: 1px solid black;
+        background-color: yellow;
+        width: 59px;
+        height: 34px;
+
+    }
+    .div35{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 59px;
+        height: 34px;
+
+    }
+    .display21{
+        display: flex;
+        position: relative;
+        bottom: 769px;
+        right:22px;
+    }
+    .div36{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 34px;
+        height: 59px;
+
+    }
+    .div37{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 34px;
+        height: 59px;
+
+    }
+    .div38{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 34px;
+        height: 59px;
+
+    }
+    .display22{
+        position: relative;
+        bottom: 994px;
+        right: 244px;
+    }
+    .display23{
+        position: relative;
+        bottom: 1177px;
+        right: 208px;
+
+    }
+    .div39{
+        border: 1px solid black;
+        background-image: radial-gradient( blue,green);
+        width: 34px;
+        height: 59px;
+
+    }
+    .div40{
+        border: 1px solid black;
+        background-color: blue;
+        width: 34px;
+        height: 59px;
+
+    }
+    .div41{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 34px;
+        height: 59px;
+    }
+    .div42{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+    }
+    .div43{
+        border: 1px solid black;
+        background-color: blue;
+        width: 36px;
+        height: 59px;
+
+    }
+    .div44{
+        border: 1px solid black;
+        background-image: repeating-linear-gradient( black,rgb(245, 67, 97));
+        width: 36px;
+        height: 59px;
+
+    }
+    .display24{
+        position: relative;
+        bottom: 1360px;
+        right: 172px;
+
+    }
+    .div45{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+    }
+    .div46{
+        border: 1px solid black;
+        background-color:blue;
+        width: 36px;
+        height: 59px;
+
+    }
+    .div47{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+    }
+    .display25{
+        position: relative;
+        bottom: 1543px;
+        right: 134px;
+
+    }
+    .div48{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+    }
+    .div49{
+        border: 1px solid black;
+        background-color:blue;
+        width: 36px;
+        height: 59px;
+
+    }
+    .div50{
+        border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+    }
+    .display26{
+        position: relative;
+        bottom: 1726px;
+        right: 96px;
+    }
+
+.div51{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+}
+.div52{
+    border: 1px solid black;
+        background-color: blue;
+        width: 36px;
+        height: 59px;
+
+}
+.div53{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.display27{
+    position: relative;
+        bottom: 1909px;
+        right: 58px;
+}
+.div54{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px
+}
+
+.div55{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px
+}
+.div56{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+
+} 
+.display28{
+    position: relative;
+    bottom: 2092px;
+    left: 345px;
+
+}
+.div57{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.div58{
+    border: 1px solid black;
+        background-color: green;
+        width: 36px;
+        height: 59px;
+}
+.div59{
+    border: 1px solid black;
+        background-image: radial-gradient(green,black,red,green);
+        width: 36px;
+        height: 59px;
+}
+.display29{
+    position: relative;
+    bottom: 2275px;
+    left: 307px;
+}
+.div60{
+    border: 1px solid black;
+        background-image: repeating-linear-gradient( blue,red);
+        width: 36px;
+        height: 59px;
+}
+.div61{
+    border: 1px solid black;
+        background-color: green;
+        width: 36px;
+        height: 59px;
+}
+.div62{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.display40{
+    position: relative;
+    bottom: 2458px;
+    left: 269px;
+}
+.div63{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.div64{
+    border: 1px solid black;
+        background-color: green;
+        width: 36px;
+        height: 59px;
+}
+.div65{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.display41{
+        position: relative;
+        bottom: 2641px;
+        left: 231px;
+
+}
+.div66{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.div67{
+    border: 1px solid black;
+        background-color: green;
+        width: 36px;
+        height: 59px;
+}
+.div68{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.display42{
+    
+        position: relative;
+        bottom: 2824px;
+        left: 193px;
+
+}
+.div69{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}
+.div70{
+    border: 1px solid black;
+        background-color: green;
+        width: 36px;
+        height: 59px;
+}
+.div71{
+    border: 1px solid black;
+        background-color: rgb(223, 219, 219);
+        width: 36px;
+        height: 59px;
+}.display43{
+    position: relative;
+        bottom: 3007px;
+        left: 158px;
+
+}
+.img1{
+    width: 20px;
+    height: 20px;
+}
+.img2{
+    width: 20px;
+    height: 20px;
+}
+.img3{
+    width: 20px;
+    height: 20px;
+
+}
+.img4{
+    width: 20px;
+    height: 20px;
+
+}
+.img5{
+    width: 20px;
+    height: 20px;
+
+}
+.img6{
+    width: 20px;
+    height: 20px;
+
+}
+.img7{
+    width: 20px;
+    height: 20px;
+
+}
+.img8{
+    width: 20px;
+    height: 20px;
+
+}
+.img9{
+    width: 20px;
+    height: 20px;
+
+}
+.img10{
+    width: 20px;
+    height: 20px;
+
+}
+.img11{
+    width: 20px;
+    height: 20px;
+
+}
+.img12{
+    width: 20px;
+    height: 20px;
+
+}
+.img13{
+    width: 20px;
+    height: 20px;
+
+}
+.img14{
+    width: 20px;
+    height: 20px;
+
+}
+.img15{
+    width: 20px;
+    height: 20px;
+
+}
+.img16{
+    width: 20px;
+    height: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
