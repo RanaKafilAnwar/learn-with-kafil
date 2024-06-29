@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 99%;
+        height: 120vh;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(233, 230, 230);
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        color: gainsboro;
+        width: 4%;
+        background-color: white;
+        padding-top: 15px;
+
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+    }
+
+    .box-1 {
+        width: 75%;
+        background-color: rgb(78, 245, 189);
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .box-2 {
+        width: 25%;
+    }
+
+    .row {
+        width: 100%;
+        gap: 10px;
+        display: flex;
+    }
+
+    .col {
+        width: 100%;
+        background-color: white;
+        height: 300px;
+
+    }
+
+    .col1-col2 {
+        width: 203%;
+        display: flex;
+        gap: 2px;
+    }
+
+    .col-1 {
+        width: 93%;
+        background-color: white;
+        padding: 3px;
+    }
+
+    .col-2 {
+        width: 110%;
+
+    }
+
+    .col-3 {
+        width: 100%;
+        background-color: white;
+        padding: 1px;
+    }
+
+    footer {
+        width: 100%;
+        height: 8%;
+        background-color: rgb(253, 251, 251);
+    }
+
+    .degree-png {
+        width: 250px;
+        height: 250px;
+        margin-top: -10px;
+    }
+
+    .main-heading {
+        margin-left: 20px;
+    }
+
+    .header-main-icon {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        color: white;
+
+
+    }
+
+    .cap {
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-icon1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .header-icon2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        background-color: rgb(237, 56, 86);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    .main-heading1 {
+        color: white;
+        padding: 2px;
+        width: 100%;
+        background-color: rgb(168, 168, 211);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main-parah1 {
+        color: rgb(143, 139, 139);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .img1 {
+        width: 250px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-right-bar {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-right-bar1 {
+        margin-top: -8px;
+    }
+
+    .main-botton {
+        width: 90%;
+        height: 20px;
+        padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: blue;
+        border-radius: 4px;
+        color: white;
+    }
+
+    .main-contant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .course-propity-0 {
+        display: flex;
+        gap: 6px;
+        padding: 3px;
+        width: 100%;
+    }
+
+    .course-propity {
+        display: flex;
+        gap: 6px;
+        width: 100%;
+
+    }
+
+    .course-propity-2 {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px;
+        background-color: white;
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .course-propity-3 {
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px;
+        background-color: rgb(214, 245, 255);
+        font-size: 12px;
+        color: rgb(0, 166, 255);
+    }
+
+    .course-propity-5 {
+        margin-left: 30px;
+    }
+
+    .main-botton:hover {
+        background-color: white;
+        color: black;
+        box-shadow: 5px 5px chocolate;
+    }
+
+    .upper-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .courses-name {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        margin-top: 3px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .courses-name-clr-yellow {
+        border: 1px solid rgb(249, 249, 121);
+        background-color: rgba(255, 255, 0, 0.628);
+        margin: 5px;
+        width: 55px;
+        height: 50px;
+        font-size: 29px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .courses-name-clr-pink {
+        border: 1px solid rgb(255, 0, 200, 0.628);
+        background-color: rgba(255, 0, 200, 0.628);
+        margin: 5px;
+        width: 55px;
+        height: 50px;
+        font-size: 29px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .courses-name-clr-green {
+        border: 1px solid rgb(127, 249, 121);
+        background-color: rgba(127, 249, 121);
+        margin: 5px;
+        width: 55px;
+        height: 50px;
+        font-size: 29px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .courses-name-clr-blue {
+        border: 1px solid rgb(9, 13, 236);
+        background-color: rgba(9, 13, 236);
+        margin: 5px;
+        width: 55px;
+        height: 50px;
+        display: flex;
+        font-size: 29px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .courses-name:hover {
+        background-color: bisque;
+        color: white;
+        box-shadow: 2px 4px chocolate;
+    }
+
+    .view-courses-yellow {
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 8px;
+        background-color: rgb(248, 248, 214);
+        color: rgb(247, 221, 22);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .view-courses-pink {
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 8px;
+        background-color: rgb(249, 221, 246);
+        color: rgb(246, 108, 131);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .view-courses-green {
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 8px;
+        background-color: rgb(195, 248, 195);
+        color: rgb(32, 252, 8);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .view-courses-blue {
+        border-radius: 5px;
+        padding: 3px;
+        margin-right: 8px;
+        background-color: rgb(209, 210, 251);
+        color: rgb(12, 35, 248);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .student-persantag {
+        margin-top: 10px;
+        color: black;
+        font-size: 14px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+    .views-box-1 {
+        width: 100%;
+        height: 130px;
+        background-color: rgb(249, 249, 14);
+    }
+
+    .views-box-2 {
+        width: 80%;
+        height: 130px;
+        background-color: rgb(218, 32, 63);
+
+    }
+
+    .fg {
+        margin: 10px;
+        margin-top: 15px;
+    }
+
+    .box-2nd {
+        display: flex;
+        justify-content: end;
+        margin-top: 26px;
+        gap: 10px;
+    }
+
+    .comleted-course {
+        margin-left: 15px;
+        font-size: 14px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main-circul {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .circul {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-top: -30px;
+        margin-right: 4px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circul:hover {
+        background-color: darkblue;
+    }
+
+    .circul-2:hover {
+        background-color: darkblue;
+    }
+
+    .circul-2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin-right: 4px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .errow {
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+
+    }
+
+    .main-chiled-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .see-all {
+
+        width: 30px;
+        height: 30px;
+        position: relative;
+        bottom: -36px;
+        right: -15px;
+        background-color: rgb(250, 250, 104);
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .see-all:hover {
+        background-color: aqua;
+    }
+
+    .unnder-box {
+        width: 100%;
+        height: 61px;
+        background-color: white;
+        margin: 2px;
+    }
+
+    .unnder-box:hover {
+        background-color: rgb(252, 231, 215);
+        box-shadow: 4px 6px chocolate;
+    }
+
+    .img-1 {
+        border: 1px solid rgb(211, 205, 205);
+        background-color: rgb(211, 205, 205);
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+
+    .display-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .display-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    botton {
+        background-color: rgb(215, 212, 212);
+        padding: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .main-col-1 {
+        display: block;
+    }
+
+    .display-flex-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -13px;
+
+    }
+
+    .main-clr {
+        background-color: rgb(171, 167, 167);
+        width: 270px;
+        height: 13px;
+        border-radius: 15px;
+    }
+
+    .malti-clr {
+        width: 150px;
+        height: 13px;
+        border-radius: 15px;
+        background-color: rgb(252, 249, 22);
+    }
+
+    .malti-clr-1 {
+        width: 100px;
+        height: 13px;
+        border-radius: 15px;
+        background-color: rgb(5, 5, 241);
+    }
+
+    .malti-clr-2 {
+        width: 70px;
+        height: 13px;
+        border-radius: 15px;
+        background-color: rgb(213, 5, 241);
+    }
+
+    .malti-clr-3 {
+        width: 150px;
+        height: 13px;
+        border-radius: 15px;
+        background-color: rgb(40, 241, 5);
+    }
+
+    .parsantag {
+        display: block;
+    }
+
+    .r-c {
+        display: block;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .margin {
+        margin-top: 0px;
+    }
+
+    .user {
+        margin-top: 3px;
+    }
+
+    .view-all {
+        border: 1px solid rgb(128, 128, 248);
+        padding: 4px;
+        border-radius: 6px;
+        color: blue;
+        background-color: rgb(133, 133, 245);
+    }
+
+    .footer-con {
+        border: 1px solid;
+        width: 20px;
+        height: 20px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-sad-con {
+        border: 1px solid;
+        width: 15px;
+        height: 15px;
+        border-radius: 7px;
+    }
+
+    .color {
+        color: rgb(98, 98, 245);
+    }
+
+    .inline {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .flex-5 {
+        display: flex;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .p-color {
+        color: rgb(0, 128, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .unnder-box-1 {
+        width: 100%;
+        height: 64px;
+        background-color: white;
+        display: flex;
+    }
+
+    .board {
+        margin: 4px;
+        margin-left: 15px;
+    }
+
+    .font-size {
+        font-size: 10px;
+    }
+
+    .courses-name-clr-blue-bary {
+        border: 1px solid;
+        padding: 12px;
+        color: white;
+        background-color: blue;
+        margin-left: 5px;
+
+    }
+
+    .view-courses-blue-1 {
+        color: blue;
+        font-size: 15px;
+
+    }
+
+    .view-courses-blue-2 {
+        font-size: 15px;
+        color: green;
+
+    }
+
+    .view-courses-blue-3 {
+        font-size: 15px;
+        color: rgb(242, 34, 68);
+    }
+
+    .view-courses-blue-4 {
+        font-size: 15px;
+        color: yellow;
+    }
+
+    .courses-name-clr-blue-bary-1 {
+        padding: 12px;
+        color: blue;
+        background-color: rgb(146, 146, 249);
+        margin-left: 5px;
+        font-size: 23px;
+    }
+
+    .courses-name-clr-blue-bary-2 {
+        padding: 12px;
+        color: green;
+        background-color: rgb(189, 240, 190);
+        margin-left: 5px;
+        font-size: 23px;
+    }
+
+    .courses-name-clr-blue-bary-3 {
+        padding: 12px;
+        color: rgb(255, 0, 225);
+        background-color: rgb(244, 220, 240);
+        margin-left: 5px;
+        font-size: 23px;
+    }
+
+    .courses-name-clr-blue-bary-4 {
+        padding: 12px;
+        color: rgb(238, 255, 0);
+        background-color: rgb(240, 247, 181);
+        margin-left: 5px;
+        font-size: 23px;
+    }
+
+    .margin-left {
+        margin: 10px;
+    }
+
+    .first-box {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .first-box:hover {
+        background-color: gainsboro;
+        margin-top: 5px;
+    }
+
+    .profile {
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .main-container {
+        background-color: white;
+    }
+
+    .img {
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+    }
+
+    .names {}
+
+    .flex-gap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .button {
+        background-color: rgb(101, 101, 244);
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50px;
+        background-color: gray;
+        margin-left: 3PX;
+    }
+    .img-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon-blue {
+        color: blue;
+    }
+
+    .flex-main {
+        display: flex;
+    }
+    @media (max-width:600px) {
+        .degree-png{
+            display: none !important;
+
+            
+        }
+    }
+
+    @media(max-width:1200px) {
+        .container {
+            flex-direction: column;
+
+
+        }
+
+        header {
+            flex-direction: column;
+
+        }
+        .box-1 {
+            width: 100%;
+        }
+
+        .box-2 {
+            width: 100%;
+        }
+
+        .nav {
+            flex-direction: row;
+            width: 100%;
+
+        }
+
+        .row {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .col1-col2 {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .col-1 {
+            width: 100%;
+        }
+
+        .col-2 {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+
+            <div class="icon-blue"><i class="fa-solid fa-house"></i></div>
+            <i class="fa-regular fa-envelope"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-solid fa-d"></i>
+            <i class="fa-solid fa-pen-to-square"></i>
+            <i class="fa-regular fa-clock"></i>
+            <i class="fa-brands fa-windows"></i>
+            <i class="fa-solid fa-print"></i>
+            <i class="fa-solid fa-lock"></i>
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+        </nav>
+        <div class="content-wrapper">
+
+            <header>
+                <div class="box-1">
+                    <div class="img-flex">
+                        <div class="main-heading">
+                            <h2 class="main-heading1">learn with effectively with us!</h2>
+                            <p class="main-parah1">get30% off every course on january.</p>
+                            <div class="header-main-icon">
+                                <div class="header-icon1"><img class="cap" src="file.png" alt=""></div>
+                                <div><b>students</b>
+                                    <p>75000+</p>
+                                </div>
+
+                                <div class="header-icon2"><i class="fa-solid fa-user"></i></div>
+                                <div><b>Expert mentors</b>
+                                    <p>200+</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <img class="degree-png" src="degree.png" alt="">
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="main-contant"> <b class="nav-right-bar">Have more </b><br><b
+                            class="nav-right-bar1">knoledge to share?</b>
+                        <p class="main-botton">+ creat a new courses</p>
+                        <div class="course-propity-0">
+                            <p class="course-propity-3">courses in prodres</p>
+                            <p class="course-propity-3">fourum discussion</p>
+                        </div>
+                        <div class="course-propity">
+
+                            <div class="course-propity-2">5</div>
+                            <div class="course-propity-2">
+                                <p class="course-propity-5">25</p>
+                                <div class="see-all"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+            </header>
+            <div class="row">
+                <div class="col">
+                    <div class="upper-name">
+                        <b class="upper-name-a">populer courses</b>
+                        <p>all courses</p>
+                    </div>
+                    <div class="main-courses-name">
+                        <div class="courses-name">
+                            <div class="flex-main">
+                                <div class="flex-gap">
+                                    <div class="courses-name-clr-yellow">U</div>
+                                    <div class="student-persantag"><b>Ui/ux Design</b>
+                                        <p>30+ courses</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="view-courses-yellow">view courses</div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="flex-main">
+                                <div class="flex-gap">
+                                    <div class="courses-name-clr-pink">M</div>
+                                    <div class="student-persantag"><b>Marketing</b>
+                                        <p>25+ courses</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-courses-pink">view courses</div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="flex-main">
+                                <div class="flex-gap">
+                                    <div class="courses-name-clr-green">W</div>
+                                    <div class="student-persantag"><b>Web Dev</b>
+                                        <p>30+ courses</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-courses-green">view courses</div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="flex-main">
+                                <div class="flex-gap">
+                                    <div class="courses-name-clr-blue">M</div>
+                                    <div class="student-persantag"><b>Mathematics</b>
+                                        <p>50+ courses</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-courses-blue">view courses</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="fg">
+                        <b>Current activity</b>
+                    </div>
+                    <div class="box-2nd">
+                        <div class="views-box-1">
+                            <div class="comleted-course">
+                                <h3>4500k+</h3>
+                                <p>Completed course</p>
+                                <p>This is the latest data</p>
+                            </div>
+                            <div class="main-circul">
+                                <div class="circul"><img class="errow"
+                                        src="360_F_536400389_qPB1KSBvaBNtQOOSC756hkuwX53v81HB.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="views-box-2">
+                            <div class="comleted-course">
+                                <h3>200k+</h3>
+                                <p>video coerse</p>
+                            </div>
+                            <div class="main-circul">
+                                <div class="circul-2"><img class="errow" src="file (1).png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="main-chiled-flex">
+                        <b class="chiled-flex">best instructors</b>
+                        <p class="parah-chiled">See All</p>
+                    </div>
+                    <div class="first-box">
+                        <div class="profile">
+                            <div class="img">
+                                <img class="img" src="avatar.png" alt="">
+                            </div>
+                            <div class="names">
+                                <div class="bold">
+                                    <p>nill yeager</p>
+                                </div>
+                                <div class="name">
+                                    <p>5 Design course</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            courses
+                        </div>
+                    </div>
+                    <div class="first-box">
+                        <div class="profile">
+                            <div class="img">
+                                <img class="img" src="avatar.png" alt="">
+                            </div>
+                            <div class="names">
+                                <div class="bold">
+                                    <p>nill yeager</p>
+                                </div>
+                                <div class="name">5 Design course</div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            courses
+                        </div>
+                    </div>
+                    <div class="first-box">
+                        <div class="profile">
+                            <div class="img">
+                                <img class="img" src="avatar.png" alt="">
+                            </div>
+                            <div class="names">
+                                <div class="bold">
+                                    <p>nill yeager</p>
+                                </div>
+                                <div class="name">5 Design course</div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            courses
+                        </div>
+                    </div>
+                    <div class="first-box">
+                        <div class="profile">
+                            <div class="img">
+                                <img class="img" src="avatar.png" alt="">
+                            </div>
+                            <div class="names">
+                                <div class="bold">
+                                    <p>nill yeager</p>
+                                </div>
+                                <div class="name">
+                                    <p>5 Design course</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="button">
+                            courses
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col1-col2">
+                    <div class="col-1">
+                        <div class="display-flex-2"><b>course complation</b>
+                            <p class="view-all">view All</p>
+                        </div>
+                        <div class="flex">
+                            <div class="parsantag">
+                                <div class="main-clr">
+                                    <div class="malti-clr"></div>
+                                </div>
+                                <p class="margin">In progress</p>
+                            </div>
+                            <div class="r-c">
+                                <b>40%</b>
+                                <p class="user">117 user</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="parsantag">
+                                <div class="main-clr">
+                                    <div class="malti-clr-1"></div>
+                                </div>
+                                <p class="margin">Completed</p>
+                            </div>
+                            <div class="r-c">
+                                <b>20%</b>
+                                <p class="user">74 user</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="parsantag">
+                                <div class="main-clr">
+                                    <div class="malti-clr-2"></div>
+                                </div>
+                                <p class="margin">Inactive</p>
+                            </div>
+                            <div class="r-c">
+                                <b>18%</b>
+                                <p class="user">58 user</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="parsantag">
+                                <div class="main-clr">
+                                    <div class="malti-clr-3"></div>
+                                </div>
+                                <p class="margin">Expeired</p>
+                            </div>
+                            <div class="r-c">
+                                <b>0.7%</b>
+                                <p class="user">11 user</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-2">
+                        <div class="display-flex"><b>upcoming leasion</b><button>see all</button></div>
+                        <div class="main-col-1">
+                            <div class="courses-name">
+                                <div class="courses-name-clr-yellow">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <div class="student-persantag"><b>informatic course</b>
+                                    <p>nill yeager, 19 april</p>
+                                </div>
+                                <div class="view-courses-yellow"><i class="fa-solid fa-arrow-right"></i></div>
+                            </div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="courses-name-clr-blue"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="student-persantag"><b>Live Drawing</b>
+                                <p>Micok Doe,12 june</p>
+                            </div>
+                            <div class="view-courses-blue"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="courses-name-clr-pink"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="student-persantag"><b>contnmporary art</b>
+                                <p>poter doe,27 july</p>
+                            </div>
+                            <div class="view-courses-pink"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                        <div class="courses-name">
+                            <div class="courses-name-clr-green"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="student-persantag"><b>Live Drawing</b>
+                                <p>Micok Doe,12 june</p>
+                            </div>
+                            <div class="view-courses-green"><i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="board"><b>Notice board</b></div>
+                    <div class="unnder-box-1">
+                        <div class="courses-name">
+                            <div class="courses-name-clr-blue-bary-1"><i class="fa-solid fa-user"></i></div>
+                            <div class="margin-left">
+                                <div class="student-persantag"><b>New teacher</b>
+                                    <p class="font-size">it is a long established fact a reached will be distracted by
+                                        readable</p>
+                                </div>
+                            </div>
+                            <div class="view-courses-blue-1">justNow</div>
+                        </div>
+                    </div>
+                    <div class="unnder-box-1">
+                        <div class="courses-name">
+                            <div class="courses-name-clr-blue-bary-2"><i class="fa-brands fa-slack"></i></div>
+                            <div class="margin-left">
+                                <div class="student-persantag"><b>New fess stucture</b>
+                                    <p class="font-size">it is a long established fact a reached will be distracted by
+                                        readable</p>
+                                </div>
+                            </div>
+                            <div class="view-courses-blue-2">today</div>
+                        </div>
+                    </div>
+                    <div class="unnder-box-1">
+                        <div class="courses-name">
+                            <div class="courses-name-clr-blue-bary-3"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="margin-left">
+                                <div class="student-persantag"><b>New updated syllabus</b>
+                                    <p class="font-size">it is a long established fact a reached will be distracted by
+                                        readable</p>
+                                </div>
+                            </div>
+                            <div class="view-courses-blue-3">2020</div>
+                        </div>
+                    </div>
+                    <div class="unnder-box-1">
+                        <div class="courses-name">
+                            <div class="courses-name-clr-blue-bary-4"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="margin-left">
+                                <div class="student-persantag"><b>New courses</b>
+                                    <p class="font-size">it is a long established fact a reached will be distracted by
+                                        readable</p>
+                                </div>
+                            </div>
+                            <div class="view-courses-blue-4">2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <div class="inline">
+                        <div class="flex-5">
+                            <div class="footer-con">
+                                <div class="footer-sad-con"></div>
+                            </div>
+                            <div><b>2024</b><span class="color">multipupose theme.</span><b>ALL Right Reserved</b></div>
+                        </div>
+                        <div class="p-color"><b>Parchas Now</b></div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
