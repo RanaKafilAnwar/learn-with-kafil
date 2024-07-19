@@ -1,9 +1,9 @@
 .main{
     border-radius: 20px;
     background-color: aliceblue;
-    width: 540px;
-    height: 930px;
-    margin-left: 350px;
+    width: 520px;
+    height: 910px;
+    margin-left: 375px;
 }
 .flex{
     display: flex;
@@ -70,5 +70,28 @@ img{
 .a{
     position: relative;
     bottom: 68px;
+}
+.next-botton{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    gap: 800px;
+    position: relative;
+    top: 500px;
+}
+botton{
+    
+    padding: 9px;
+    background-color: rgb(0, 34, 255);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+botton:hover{
+    background-color: red;
+    color: black;
+    border-radius: 5px;
 }
 
