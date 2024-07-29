@@ -5,7 +5,7 @@ body{
 .main-contianer{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgb(248, 66, 66),rgb(10, 10, 10))
+    background-image: linear-gradient(rgb(235, 142, 142),rgb(10, 10, 10))
 }
 .header{
     width: 98%;
@@ -33,6 +33,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 40px;
+    
 }
 .main-header{
     width: 100%;
@@ -41,24 +42,31 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color:rgb(89, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 4px 5px;
+    color: white;
 
 }
-b{
-  padding: 9px;
-  background-color: white;
-  color: black;
-}
-b:hover{
-    background-color: rgb(18, 18, 19);
-    color: white;
+.main-header:hover{
+    background-color:rgb(126, 119, 119); ;
 }
 .website{
     border: 1px solid white;
-    width: 20%;
     height: auto;
-    text-align: center;
-    padding: 5px;
-
+    padding: 15px 40px 12px 40px;
+    
+    box-shadow: 5px 5px 5px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}   
+.flex{
+    display: flex;
+    flex-direction: column;
 }
 a{
     color:black;
