@@ -1,0 +1,76 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+form{
+  
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://mcdn.wallpapersafari.com/medium/57/23/1HfTil.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#image{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+}
+input{
+    height: 25px;
+    margin: 4px;
+    width: 98%;
+    border-radius: 5px;
+    border-color: none;
+    flex-direction: row;
+}
+input{
+    border-color: blue;
+}
+label{
+    margin: 4px;
+    color: white;
+    font-family: sans-serif;
+}
+.btn{
+    padding: 9px;
+    background-color: rgb(11, 11, 11);
+    color: white;
+}
+.block{
+    width:95%;
+}
+.btn:hover{
+    background-color: rgb(82, 78, 78);
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    
+}
+.display-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:600px) {
+    input{
+        flex-direction: column;
+    }
+    form{
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .flex{
+        flex-direction: column;
+    }
+}
