@@ -3,7 +3,7 @@ body {
 }
 
 .sky {
-    background-image: url(sky_53876-47159.jpg);
+    background-image: url(..//img/sky_53876-47159.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 116%;
@@ -13,7 +13,7 @@ body {
 }
 
 .treet {
-    background-image: url(./treets_-removebg-preview.png);
+    background-image: url(..//img/treets_-removebg-preview.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 200%;
@@ -24,7 +24,7 @@ body {
 
 .road {
     border: 3px solid yellow;
-    width: 200%;
+    width: 400%;
     height: 30vh;
     background-color: rgba(0, 0, 0, 0.746);
     position: absolute;
