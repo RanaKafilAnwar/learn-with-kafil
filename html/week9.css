@@ -1,0 +1,43 @@
+body{
+    background-image: url(https://img.freepik.com/premium-vector/neon-design-background_23-2149098710.jpg?ga=GA1.1.344535522.1723453256);
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: 1px solid white;
+    width: 50vh;
+    height: 80vh;
+    background-image: url(https://img.freepik.com/premium-vector/beautiful-calm-night-mountain-with-moonlight_104785-1378.jpg?ga=GA1.1.344535522.1723453256);
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+input{
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+    padding-left:8px ;
+}
+#results{
+
+}
+#submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.submit-color{
+    background-color: blue;
+    padding: 8px;  
+    width: 100px; 
+}

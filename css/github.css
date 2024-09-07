@@ -1,11 +1,12 @@
 body{
+    background-image: url(https://img.freepik.com/premium-vector/neon-design-background_23-2149098710.jpg?ga=GA1.1.344535522.1723453256);
+    background-size: cover;
     margin: 0px;
     padding: 0px;
 }
 .main-contianer{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgb(235, 142, 142),rgb(10, 10, 10))
 }
 .header{
     width: 98%;
