@@ -13,7 +13,6 @@ body{
     border: 2px solid rgb(238, 235, 235);
     width: 4px;
     height: 50px;
-    animation: bordermove;
     background-color:rgb(246, 5, 5) ;
 }
 .font-size{
@@ -57,6 +56,7 @@ body{
 }
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
@@ -65,18 +65,16 @@ body{
     border: 2px solid white;
     outline: solid 1px black;
     margin-top: 50px;
-    box-shadow: 10px 5px 5px 5px;
+    box-shadow: 6px 13px 54px 30px;
     color: rgb(229, 226, 226);
     border-radius: 10px;
-    padding: 10px;
-    width: 55%;
-    height: 80vh;
+    padding: 20px 27px 40px;
     
 }
 .vegas-overlay {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 12px;
     margin-top: 15px;
 }
 .vegas-overlay-2 {
@@ -92,7 +90,6 @@ body{
     height: 160px;
     border-radius: 10px;
     box-shadow: 5px 10px ;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,8 +100,25 @@ body{
     color: white;
     box-shadow: none;
 }
-a{
-    text-decoration: none;
+@media (max-width:1200px) {
+    .vegas-overlay-2{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        overflow: hidden;
+        
+    }
+    .vegas-overlay{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
 }
 
 
