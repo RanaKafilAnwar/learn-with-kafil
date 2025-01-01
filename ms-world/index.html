@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="employees.xml" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee management system</title>
+</head>
+<body>
+<style>
+    body{
+        font-family: arial, sans-serif;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid black;
+    }
+    th, t d{
+      padding: 10px;
+      text-align: left;  
+    }
+    form{
+        margin-top: 20px;
+    }
+    form input{
+        padding: 10px;
+        font-size: 16px;
+    }
+    #delete-id{
+        width: 250px;
+    }
+    button{
+        padding: 10px;
+        font-size: 16px;
+        background: #3e9141;
+        border: 1px solid #3e9141;
+        color: #fff;
+    }
+</style>
+<h1>
+    Employee Management System
+</h1>
+<div id="employee-container">
+    <h2>All Employees</h2>
+    <table id="employee-table">
+<thead>
+    <tr>
+        <th>ID </th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+    </tr>
+</thead>
+    </table>
+</div>
+<h2>Add new Empliyee</h2>
+<form id="add-employee-form" autocomplete="off">
+    <input type="text"  id="emp-id" placeholder="Employee ID" required>
+    <input type="text"  id="emp-Name" placeholder="Employee Naam" required>
+    <input type="text"  id="emp-dept" placeholder="Department" required>
+    <input type="text"  id="emp-salary" placeholder="salary" required> <br><br>
+     <button type="button" onclick="addemployee()">AAD employee</button>
+</form>
+<h2>Delete Employee</h2>
+<form id="Delete-employee-form" autocomplete="off">
+<input type="text"  id="delete-id" placeholder="Enter employee ID to Delete" required>
+<button type="button" onclick="deleteEmployee()">Delete employee</button>
+</form>
+<script>
+    let xm1data;
+    async function loadxml() {
+        const response = await fetch('employee.xml');
+        const text = await response.test();
+        const parser = new DOMParser();
+        XMLData = parser .parseFromString(text, 'application/xml');
+        displayEmployees();
+    }
+     function displayEmployees() {
+        const tablebody = document.querySelector('#employee-table tbody');
+        tablebody.innerHTML ='';
+        const employee = xmldata.getElementsbytagname('employee');
+        for (let emp of  employees){
+            const id = emp .getElementsbytagname('id')[0].textcontent;
+            const name = emp .getElementsbytagname('name')[0].textcontent;
+            const dept = emp .getElementsbytagname('department')[0].textcontent;
+            const salary = emp .getElementsbytagname('salary')[0].textcontent;
+            const row = `<tr>
+                <td>${id}</td>
+                <td>${name}</td>
+                <td>${dept}</td>
+                <td>${salary}</td>
+                </tr>`;
+                tablebody.innerHTML += row;
+    }
+    } 
+     function addemployee(){
+        const id = document.getElementById('emp-id').value;
+        const name = document.getElementById('emp-name').value;
+        const dept = document.getElementById('emp-dept').value;
+        const salary = document.getElementById('emp-salary').value;
+        if (!id || !name ||  !dept || !salary){
+            alert('all fields are required');
+            return;
+        }
+
+      const newemployee =mmldata.createelement('empolyee');
+      newemployee.innerHTML =`
+      <id>${id}</id>
+      <name>${name}</name>
+      <department>${dept}</department>
+      <salary>${salary}</salary>`;
+      xmldata.getElementsbytagname('employee')[0].appendchild(newemployee);
+      displayEmployees();
+      document.getElementById('emp-id').value = "";
+      document.getElementById('emp-name').value = "";
+      document.getElementById('emp-dept').value = "";
+      document.getElementById('emp-salary').value = "";
+    
+     function deleteEmployee(){
+        const deleteid = document.getElementById('delete-id').value;
+        if('please enter an id to delete!');
+        return;
+    }
+    const employee = xmldata.getElementsbytagname('employee')
+    for (let i = 0; i < employee.lenth; i++){
+        const id = employee[i].getElementsbytagname('id')[0].textcontent;
+        if (is === deleteid){
+            employee[i].parentNode.removchild(employee[i]);
+            displayEmployees();
+            document.getElementById(`delete-id`).value = "";
+            return;
+        }
+    }
+    alert('empolyee id not found!');
+    document.getElementById('delete-id').value = "";
+}
+    window.onload = loadxml
+</script>
+</body>
+</html>
